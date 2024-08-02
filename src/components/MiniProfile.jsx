@@ -4,7 +4,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function MiniProfile() {
   const { data: session } = useSession();
-
   return (
     <div className="flex items-center justify-between mt-14 ml-10 w-full">
       <img
@@ -21,7 +20,7 @@ export default function MiniProfile() {
           onClick={signOut}
           className="text-blue-500 text-sm font-semibold"
         >
-          Sign On
+          Sign Out
         </button>
       ) : (
         <button
